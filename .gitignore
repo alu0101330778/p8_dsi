@@ -1,0 +1,7 @@
+node_modules
+dist
+package-lock.json
+enunciado.txt
+commands.txt
+.nyc_output
+.coveralls.yml

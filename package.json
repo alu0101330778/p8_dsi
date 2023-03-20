@@ -1,0 +1,60 @@
+{
+  "name": "practica08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "ej1": "tsc-watch --onSuccess \"node dist/ejercicio01/ejercicio01.js\"",
+    "ej2": "tsc-watch --onSuccess \"node dist/ejercicio02/ejercicio02.js\"",
+    "ej3": "tsc-watch --onSuccess \"node dist/ejercicio03/ejercicio03.js\"",
+    "doc": "typedoc",
+    "test": "nyc mocha -r ts-node/register 'tests/**/*.ts'",
+    "test1": "mocha -r ts-node/register 'tests/ejercicio01.spec.ts'",
+    "test2": "mocha -r ts-node/register 'tests/ejercicio02.spec.ts'",
+    "test3": "mocha -r ts-node/register 'tests/ejercicio03.spec.ts'",
+    "mod1": "mocha -r ts-node/register 'tests/modificacion01.spec.ts'",
+    "mod2": "mocha -r ts-node/register 'tests/modificacion02.spec.ts'",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output"
+  },
+  "keywords": [],
+  "author": "Jairo Alonso Abreu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/lowdb": "^1.0.11",
+    "@types/mocha": "^10.0.1",
+    "@types/prompt-sync": "^4.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "chai": "^4.3.7",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "i": "^0.3.7",
+    "mocha": "^10.2.0",
+    "npm": "^9.6.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.8.4",
+    "prompt-sync": "^4.2.0",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.0",
+    "typedoc": "^0.23.26"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.4",
+    "lowdb": "^1.0.0",
+    "sinon": "^15.0.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alu0101330778/p8_dsi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alu0101330778/p8_dsi/issues"
+  },
+  "homepage": "https://github.com/alu0101330778/p8_dsi#readme"
+}
